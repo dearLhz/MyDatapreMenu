@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{05CDBED0-3ADE-417E-A0CD-5DC8EA76885B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyDatapreMenu</RootNamespace>
+    <AssemblyName>MyDatapreMenu</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.0.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.Carto, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Controls, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ConversionTools, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.DataManagementTools, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.DataSourcesFile, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesRaster, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Display, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.GeoAnalyst, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geodatabase, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geometry, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessing, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessor, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.SpatialAnalyst, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SpatialAnalystTools, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.System, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SystemUI, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Version, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cDBConnection.cs" />
+    <Compile Include="cFeatureToRaster.cs" />
+    <Compile Include="cIdw.cs" />
+    <Compile Include="cKriging.cs" />
+    <Compile Include="cProject.cs" />
+    <Compile Include="cRasterCalculator.cs" />
+    <Compile Include="cRasterToPolygon.cs" />
+    <Compile Include="cResample.cs" />
+    <Compile Include="cSpline.cs" />
+    <Compile Include="DatapreMenuBar.cs" />
+    <Compile Include="DBConnection1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBConnection1.Designer.cs">
+      <DependentUpon>DBConnection1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureToRaster1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeatureToRaster1.Designer.cs">
+      <DependentUpon>FeatureToRaster1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDW1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IDW1.Designer.cs">
+      <DependentUpon>IDW1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kriging1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kriging1.Designer.cs">
+      <DependentUpon>Kriging1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kriging2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kriging2.Designer.cs">
+      <DependentUpon>Kriging2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Project1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project1.Designer.cs">
+      <DependentUpon>Project1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RasterCalculator1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RasterCalculator1.Designer.cs">
+      <DependentUpon>RasterCalculator1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RasterToPolygon1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RasterToPolygon1.Designer.cs">
+      <DependentUpon>RasterToPolygon1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resample1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resample1.Designer.cs">
+      <DependentUpon>Resample1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spline1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spline1.Designer.cs">
+      <DependentUpon>Spline1.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyPluginEngine\MyPluginEngine.csproj">
+      <Project>{40e8851d-bde3-450e-af6a-5d4ca40b0fb7}</Project>
+      <Name>MyPluginEngine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DBConnection1.resx">
+      <DependentUpon>DBConnection1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeatureToRaster1.resx">
+      <DependentUpon>FeatureToRaster1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IDW1.resx">
+      <DependentUpon>IDW1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kriging1.resx">
+      <DependentUpon>Kriging1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kriging2.resx">
+      <DependentUpon>Kriging2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project1.resx">
+      <DependentUpon>Project1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RasterCalculator1.resx">
+      <DependentUpon>RasterCalculator1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RasterToPolygon1.resx">
+      <DependentUpon>RasterToPolygon1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resample1.resx">
+      <DependentUpon>Resample1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spline1.resx">
+      <DependentUpon>Spline1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
