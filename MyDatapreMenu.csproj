@@ -36,8 +36,29 @@
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevComponents.DotNetBar2, Version=12.0.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.ADF.Local, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="ESRI.ArcGIS.Carto, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
@@ -95,6 +116,7 @@
     <Compile Include="cKriging.cs" />
     <Compile Include="cProject.cs" />
     <Compile Include="cRasterCalculator.cs" />
+    <Compile Include="cRasterReClass.cs" />
     <Compile Include="cRasterToPolygon.cs" />
     <Compile Include="cResample.cs" />
     <Compile Include="cSpline.cs" />
@@ -110,6 +132,12 @@
     </Compile>
     <Compile Include="FeatureToRaster1.Designer.cs">
       <DependentUpon>FeatureToRaster1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RasterReClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RasterReClass.designer.cs">
+      <DependentUpon>RasterReClass.cs</DependentUpon>
     </Compile>
     <Compile Include="IDW1.cs">
       <SubType>Form</SubType>
@@ -128,6 +156,9 @@
     </Compile>
     <Compile Include="Kriging2.Designer.cs">
       <DependentUpon>Kriging2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewEx.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Project1.cs">
       <SubType>Form</SubType>
@@ -165,9 +196,15 @@
     <Compile Include="Spline1.Designer.cs">
       <DependentUpon>Spline1.cs</DependentUpon>
     </Compile>
+    <Compile Include="testForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testForm.designer.cs">
+      <DependentUpon>testForm.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MyPluginEngine\MyPluginEngine.csproj">
+    <ProjectReference Include="..\HeiHeDSS\MyPluginEngine\MyPluginEngine.csproj">
       <Project>{40e8851d-bde3-450e-af6a-5d4ca40b0fb7}</Project>
       <Name>MyPluginEngine</Name>
     </ProjectReference>
@@ -178,6 +215,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FeatureToRaster1.resx">
       <DependentUpon>FeatureToRaster1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RasterReClass.resx">
+      <DependentUpon>RasterReClass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IDW1.resx">
       <DependentUpon>IDW1.cs</DependentUpon>
@@ -206,6 +246,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Spline1.resx">
       <DependentUpon>Spline1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testForm.resx">
+      <DependentUpon>testForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

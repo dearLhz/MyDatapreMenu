@@ -63,6 +63,10 @@ namespace MyDatapreMenu
                     itemDef.ID = "MyDatapreMenu.cDBConnection";
                     itemDef.Group = true;
                     break;
+                case 9:
+                    itemDef.ID = "MyDatapreMenu.cRasterReClass";
+                    itemDef.Group = true;
+                    break;
                 default:
                     break;
 
