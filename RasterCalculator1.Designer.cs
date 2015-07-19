@@ -341,7 +341,7 @@
             // 
             // listBox1
             // 
-            this.listBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.listBox1.BackColor = System.Drawing.Color.White;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 12;
             this.listBox1.Location = new System.Drawing.Point(12, 14);
@@ -352,7 +352,7 @@
             // 
             // listBox2
             // 
-            this.listBox2.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.listBox2.BackColor = System.Drawing.Color.White;
             this.listBox2.FormattingEnabled = true;
             this.listBox2.ItemHeight = 12;
             this.listBox2.Items.AddRange(new object[] {

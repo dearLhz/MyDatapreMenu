@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace MyDatapreMenu
 {
-    public partial class RasterCalculator1 : DevComponents.DotNetBar.Office2007Form
+    public partial class RasterCalculator1 : DevComponents.DotNetBar.OfficeForm
     {
         public IMap pMap;
         string s;//表达式参数
@@ -21,6 +21,15 @@ namespace MyDatapreMenu
         public RasterCalculator1()
         {
             InitializeComponent();
+            //禁用Glass主题
+            this.EnableGlass = false;
+            //不显示最大化最小化按钮
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            //
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            //去除图标
+            this.ShowIcon = false;
         }
 
         #region 表达式按钮设置

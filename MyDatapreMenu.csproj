@@ -196,12 +196,6 @@
     <Compile Include="Spline1.Designer.cs">
       <DependentUpon>Spline1.cs</DependentUpon>
     </Compile>
-    <Compile Include="testForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="testForm.designer.cs">
-      <DependentUpon>testForm.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HeiHeDSS\MyPluginEngine\MyPluginEngine.csproj">
@@ -246,9 +240,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Spline1.resx">
       <DependentUpon>Spline1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="testForm.resx">
-      <DependentUpon>testForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -76,4 +76,3 @@ D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.csproj.GenerateResource
 D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.dll
 D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.pdb
 D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.RasterReClass.resources
-D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.testForm.resources
