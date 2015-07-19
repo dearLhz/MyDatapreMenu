@@ -20,7 +20,7 @@ namespace MyDatapreMenu
 
         public long ItemCount
         {
-            get { return 9; }
+            get { return 10; }
         }
 
         public void GetItemInfo(int pos, MyPluginEngine.ItemDef itemDef)
@@ -61,11 +61,11 @@ namespace MyDatapreMenu
                     break;
                 case 8:
                     itemDef.ID = "MyDatapreMenu.cDBConnection";
-                    itemDef.Group = true;
+                    itemDef.Group = false;
                     break;
                 case 9:
                     itemDef.ID = "MyDatapreMenu.cRasterReClass";
-                    itemDef.Group = true;
+                    itemDef.Group = false;
                     break;
                 default:
                     break;

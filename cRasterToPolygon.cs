@@ -21,7 +21,7 @@ namespace MyDatapreMenu
 
         public cRasterToPolygon()
         {
-            string str = @"..\Data\Image\DatapreMenu\rst2shp.ico";
+            string str = @"..\Data\Image\DatapreMenu\rst2shp.png";
             if (System.IO.File.Exists(str))
                 m_hBitmap = new Bitmap(str);
             else

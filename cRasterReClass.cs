@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using ESRI.ArcGIS.Carto;
 using MyPluginEngine;
 
 namespace MyDatapreMenu
@@ -82,7 +83,7 @@ namespace MyDatapreMenu
             if (hook != null)
             {
                 this.hk = hook;
-                rasterReClass1 = new RasterReClass(null);
+                rasterReClass1 = new RasterReClass(hook.MapControl.Map);
                 rasterReClass1.Visible = false;
             }
         }

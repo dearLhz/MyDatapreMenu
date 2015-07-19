@@ -63,7 +63,6 @@ D:\77211356\GitHub\MyDatapreMenu\bin\Debug\MyPluginEngine.pdb
 D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.csprojResolveAssemblyReference.cache
 D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.DBConnection1.resources
 D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.FeatureToRaster1.resources
-D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.frmRasterReClass.resources
 D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.IDW1.resources
 D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.Kriging1.resources
 D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.Kriging2.resources
@@ -76,3 +75,5 @@ D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.Spline1.resources
 D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.csproj.GenerateResource.Cache
 D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.dll
 D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.pdb
+D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.RasterReClass.resources
+D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.testForm.resources

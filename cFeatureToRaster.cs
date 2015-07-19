@@ -22,7 +22,7 @@ namespace MyDatapreMenu
 
         public cFeatureToRaster()
         {
-            string str = @"..\Data\Image\DatapreMenu\shp2rst.ico";
+            string str = @"..\Data\Image\DatapreMenu\shp2rst.png";
             if (System.IO.File.Exists(str))
                 m_hBitmap = new Bitmap(str);
             else
