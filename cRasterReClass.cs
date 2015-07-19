@@ -20,7 +20,7 @@ namespace MyDatapreMenu
 
         public cRasterReClass()
         {
-            string str = @"..\Data\Image\DatapreMenu\ReClass.png";
+            string str = @"..\Data\Image\DatapreMenu\RasterReClass.png";
             if (System.IO.File.Exists(str))
                 m_hBitmap = new Bitmap(str);
             else
