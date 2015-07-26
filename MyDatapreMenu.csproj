@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MyDatapreMenu</RootNamespace>
     <AssemblyName>MyDatapreMenu</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>
@@ -56,50 +56,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevComponents.DotNetBar2, Version=12.0.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
-    <Reference Include="ESRI.ArcGIS.ADF.Local, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="ESRI.ArcGIS.Carto, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="ESRI.ArcGIS.Controls, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="ESRI.ArcGIS.ConversionTools, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
-    <Reference Include="ESRI.ArcGIS.DataManagementTools, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
-    <Reference Include="ESRI.ArcGIS.DataSourcesFile, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="ESRI.ArcGIS.DataSourcesRaster, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="ESRI.ArcGIS.Display, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="ESRI.ArcGIS.GeoAnalyst, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="ESRI.ArcGIS.Geodatabase, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="ESRI.ArcGIS.Geometry, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="ESRI.ArcGIS.Geoprocessing, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="ESRI.ArcGIS.Geoprocessor, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
-    <Reference Include="ESRI.ArcGIS.SpatialAnalyst, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="ESRI.ArcGIS.SpatialAnalystTools, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
-    <Reference Include="ESRI.ArcGIS.System, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="ESRI.ArcGIS.SystemUI, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </Reference>
+    <Reference Include="ESRI.ArcGIS.AxControls, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
     <Reference Include="ESRI.ArcGIS.Version, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -110,6 +72,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cAspect.cs" />
     <Compile Include="cDBConnection.cs" />
     <Compile Include="cFeatureToRaster.cs" />
     <Compile Include="cIdw.cs" />
@@ -133,6 +96,31 @@
     <Compile Include="FeatureToRaster1.Designer.cs">
       <DependentUpon>FeatureToRaster1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Aspect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aspect.designer.cs">
+      <DependentUpon>Aspect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buffer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buffer.designer.cs">
+      <DependentUpon>Buffer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clips.designer.cs">
+      <DependentUpon>Clips.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Slope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Slope.designer.cs">
+      <DependentUpon>Slope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpatialAnalysisOption.cs" />
     <Compile Include="RasterReClass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +184,7 @@
     <Compile Include="Spline1.Designer.cs">
       <DependentUpon>Spline1.cs</DependentUpon>
     </Compile>
+    <Compile Include="UtilityFunction.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HeiHeDSS\MyPluginEngine\MyPluginEngine.csproj">
@@ -209,6 +198,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FeatureToRaster1.resx">
       <DependentUpon>FeatureToRaster1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aspect.resx">
+      <DependentUpon>Aspect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buffer.resx">
+      <DependentUpon>Buffer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clips.resx">
+      <DependentUpon>Clips.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Slope.resx">
+      <DependentUpon>Slope.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RasterReClass.resx">
       <DependentUpon>RasterReClass.cs</DependentUpon>

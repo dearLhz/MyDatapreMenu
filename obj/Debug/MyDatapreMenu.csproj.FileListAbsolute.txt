@@ -76,3 +76,8 @@ D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.csproj.GenerateResource
 D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.dll
 D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.pdb
 D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.RasterReClass.resources
+D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.Aspect.resources
+D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.Buffer.resources
+D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.Clips.resources
+D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.frmSlope.resources
+D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.frmStatistic.resources
