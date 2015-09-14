@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
@@ -68,6 +68,10 @@
     </Reference>
     <Reference Include="ESRI.ArcGIS.AxControls, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
     <Reference Include="ESRI.ArcGIS.Carto, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Controls, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
@@ -265,7 +269,7 @@
     <Compile Include="UtilityFunction.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HeiHeDSS\MyPluginEngine\MyPluginEngine.csproj">
+    <ProjectReference Include="..\框架test\PluginEngine\MyPluginEngine\MyPluginEngine\MyPluginEngine.csproj">
       <Project>{40e8851d-bde3-450e-af6a-5d4ca40b0fb7}</Project>
       <Name>MyPluginEngine</Name>
     </ProjectReference>
