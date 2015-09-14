@@ -80,7 +80,6 @@ D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.Aspect.resources
 D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.Buffer.resources
 D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.Clips.resources
 D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.frmSlope.resources
-D:\77211356\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.frmStatistic.resources
 D:\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.csprojResolveAssemblyReference.cache
 D:\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.DBConnection1.resources
 D:\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.FeatureToRaster1.resources
