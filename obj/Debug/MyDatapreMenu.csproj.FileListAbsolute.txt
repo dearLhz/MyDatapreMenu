@@ -105,3 +105,4 @@ D:\GitHub\MyDatapreMenu\bin\Debug\MyPluginEngine.dll
 D:\GitHub\MyDatapreMenu\bin\Debug\log4net.dll
 D:\GitHub\MyDatapreMenu\bin\Debug\MyPluginEngine.pdb
 D:\GitHub\MyDatapreMenu\obj\Debug\MyDatapreMenu.pdb
+D:\77211356\GitHub\MyDatapreMenu\bin\Debug\log4net.dll
